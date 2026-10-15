@@ -1,0 +1,39 @@
+const DATA=[{"title": "汽力発電のタービン発電機", "question": "汽力発電所におけるタービン発電機の特徴・構造上の留意点を記述してください。", "model": "汽力発電所のタービン発電機は、蒸気タービンに直結され高速で回転する同期発電機である。一般に2極または4極の円筒形回転子を用い、高速回転時の機械的強度と回転バランスを確保する。大容量機では発熱が大きいため、水素冷却や水冷などを用いて固定子・回転子の温度上昇を抑制する。また、軸受の潤滑、振動監視、絶縁劣化の監視などを行い、安定運転を確保する。", "keywords": ["同期発電機", "高速回転", "円筒形回転子", "冷却", "振動監視"]}, {"title": "燃料電池", "question": "燃料電池の発電原理と特徴を記述してください。", "model": "燃料電池は、水素などの燃料と空気中の酸素を電気化学反応させ、化学エネルギーを直接電気エネルギーに変換する発電装置である。燃焼工程を介さないため発電効率が高く、騒音・振動や大気汚染物質の排出が少ない。発電時に生じる排熱を給湯などに利用するコージェネレーションとすることで、総合エネルギー効率を高めることができる。", "keywords": ["電気化学反応", "直接変換", "発電効率", "排熱利用", "コージェネレーション"]}, {"title": "ガス絶縁開閉装置（GIS）", "question": "ガス絶縁開閉装置（GIS）の構造と特徴を記述してください。", "model": "GISは、遮断器、断路器、接地開閉器、母線などの機器を接地された金属容器内に収納し、絶縁性能の高いガスを絶縁媒体として用いる開閉装置である。充電部を密閉して機器間の絶縁距離を小さくできるため、変電設備を小形化できる。また、外気の汚損や塩害などの影響を受けにくく信頼性が高い。一方、ガス管理、気密管理および内部事故時の点検・復旧に留意する。", "keywords": ["金属容器", "絶縁ガス", "小形化", "塩害", "気密管理"]}, {"title": "太陽光発電の系統連系", "question": "太陽光発電設備を電力系統へ連系する際の主な技術的留意事項を記述してください。", "model": "太陽光発電設備を系統連系する場合、パワーコンディショナにより直流電力を系統と同じ電圧・周波数の交流電力に変換する。系統側の停電時に発電設備だけが系統へ給電する単独運転を防止するため、単独運転検出機能により速やかに解列する。また、過電圧・不足電圧、周波数異常などを検出して系統から切り離し、系統の電力品質と保安を確保する。", "keywords": ["パワーコンディショナ", "電圧・周波数", "単独運転防止", "解列", "保護機能"]}, {"title": "送電線の分路リアクトル", "question": "送電線に設置する分路リアクトルの目的と作用を記述してください。", "model": "分路リアクトルは、長距離・高電圧送電線や地中ケーブルなどで、軽負荷時に線路の静電容量によって発生する進み無効電力を吸収するために設置する。これにより受電端電圧が上昇するフェランチ効果を抑制し、系統電圧を適正範囲に維持する。必要に応じて開閉器により投入・開放し、電圧および無効電力を調整する。", "keywords": ["静電容量", "進み無効電力", "吸収", "フェランチ効果", "電圧上昇抑制"]}, {"title": "送電線の多導体方式", "question": "架空送電線で多導体方式を採用する目的と効果を記述してください。", "model": "多導体方式は、1相を複数の電線に分け、スペーサで一定間隔に保持して構成する方式である。等価的な導体半径が大きくなるため、電線表面の電界強度を低減してコロナ放電を抑制でき、コロナ損、雑音および騒音を低減できる。また、線路のインダクタンスが低下し静電容量が増加するため、送電容量の増大と安定度向上に有効である。", "keywords": ["1相複数導体", "スペーサ", "電界強度", "コロナ放電", "送電容量"]}, {"title": "架空送電線の振動対策", "question": "架空送電線に生じる振動と、その対策を記述してください。", "model": "架空送電線では風により微風振動やギャロッピングなどが発生し、長期間継続すると電線や支持部の疲労損傷につながる。微風振動に対しては、ストックブリッジダンパなどの防振装置を取り付けて振動エネルギーを吸収する。多導体ではスペーサダンパを使用し、素導体間隔の保持と振動抑制を図る。設備条件に応じて着氷雪対策や相間スペーサも検討する。", "keywords": ["微風振動", "ギャロッピング", "疲労損傷", "ダンパ", "スペーサダンパ"]}, {"title": "交流無停電電源装置（UPS）", "question": "交流無停電電源装置（UPS）の目的と基本構成を記述してください。", "model": "UPSは、商用電源の停電や電圧異常が発生した場合でも、重要負荷へ連続して安定した交流電力を供給する装置である。常時インバータ給電方式では、商用交流を整流器で直流に変換し、蓄電池を直流回路に接続して、インバータで交流に再変換して負荷へ供給する。停電時は蓄電池からインバータを介して無瞬断で給電し、保守時などはバイパス回路を利用する。", "keywords": ["停電", "整流器", "蓄電池", "インバータ", "無瞬断"]}, {"title": "遮断器の保護協調", "question": "配電設備における遮断器の保護協調について記述してください。", "model": "保護協調は、短絡や過負荷などの事故が発生した際、事故点に最も近い遮断器を先に動作させ、健全部分への停電影響を最小限にする考え方である。上下位遮断器の過電流引外し特性や動作時間を比較し、選択遮断できるよう電流値と時間差を設定する。遮断器の遮断容量が想定短絡電流以上であることも確認し、設備を安全に保護する。", "keywords": ["事故点に近い", "選択遮断", "動作時間", "過電流引外し特性", "遮断容量"]}, {"title": "電動機のインバータ制御", "question": "電動機のインバータ制御の原理と効果を記述してください。", "model": "インバータ制御は、交流電源をいったん直流に変換した後、インバータで任意の周波数・電圧の交流に変換して電動機へ供給する方式である。誘導電動機では電源周波数を変化させることで回転速度を制御できる。ファンやポンプでは必要量に応じて回転速度を下げることにより、ダンパや弁による絞り制御に比べて消費電力を低減でき、省エネルギーに有効である。", "keywords": ["直流変換", "周波数", "電圧", "回転速度制御", "省エネルギー"]}, {"title": "電線の許容電流", "question": "電線の許容電流を決定する考え方と、影響する主な条件を記述してください。", "model": "電線の許容電流は、通電によるジュール熱で電線温度が上昇しても、絶縁体などの許容温度を超えない範囲で連続して流すことのできる電流である。電線の種類・太さ・絶縁材料のほか、周囲温度、敷設方法、管内の電線数、電線相互の熱影響などで変化する。このため施工条件に応じた電流減少係数などを考慮して電線サイズを選定する。", "keywords": ["ジュール熱", "許容温度", "周囲温度", "敷設方法", "電流減少係数"]}, {"title": "過電流継電器（OCR）の動作試験", "question": "過電流継電器（OCR）の動作試験の目的と確認項目を記述してください。", "model": "OCRの動作試験は、設定した過電流に対して継電器が所定の電流値および時間で確実に動作し、遮断器へトリップ信号を出せることを確認するために行う。試験器から継電器へ試験電流を印加し、最小動作電流や動作時間を測定して整定値・動作特性と照合する。また、必要に応じて遮断器まで含めた連動試験を行い、保護回路全体の健全性を確認する。", "keywords": ["試験電流", "最小動作電流", "動作時間", "整定値", "連動試験"]}, {"title": "LANのルータ", "question": "LANにおけるルータの役割を記述してください。", "model": "ルータは、異なるIPネットワーク間でパケットを中継する装置である。受信したIPパケットの宛先IPアドレスを確認し、ルーティングテーブルに基づいて適切な次の転送先を選択する。LANと外部ネットワークの接続などに用いられ、機種や構成によってはNAT、DHCP、アクセス制御などの機能も備える。", "keywords": ["異なるネットワーク", "IPパケット", "宛先IPアドレス", "ルーティングテーブル", "転送"]}, {"title": "ATき電方式", "question": "交流電気鉄道のATき電方式について、構成と特徴を記述してください。", "model": "ATき電方式は、単巻変圧器（AT）を線路沿線に一定間隔で設置し、トロリ線とき電線を用いて電気車へ電力を供給する交流き電方式である。ATを介してトロリ線側とき電線側に電圧を分担させることで、き電回路の電圧を高くして送電し、電圧降下を小さくできる。このため大電力・長距離き電に適し、通信線への誘導障害の低減にも有効である。", "keywords": ["単巻変圧器", "トロリ線", "き電線", "電圧降下", "誘導障害"]}, {"title": "電気鉄道の閉そく装置", "question": "電気鉄道における閉そく装置の目的と基本的な考え方を記述してください。", "model": "閉そく装置は、列車同士の衝突を防止するため、線路を一定の区間に区切り、原則として一つの閉そく区間に同時に二つ以上の列車を進入させないよう制御する保安装置である。軌道回路などで列車の在線を検知し、その情報に基づいて信号機の現示を制御する。これにより先行列車との安全な間隔を確保する。", "keywords": ["衝突防止", "閉そく区間", "在線検知", "軌道回路", "信号機"]}, {"title": "交通信号の感応制御", "question": "交通信号の感応制御について、目的と制御方法を記述してください。", "model": "感応制御は、車両感知器などで交通需要を検出し、その検出情報に応じて信号の青時間や現示を調整する制御方式である。交通量の少ない従道路では、車両を感知したときに必要な青時間を与えるなど、実際の交通状況に応じて制御する。これにより不要な待ち時間を減らし、交差点の交通処理効率を向上させる。", "keywords": ["車両感知器", "交通需要", "青時間", "交通状況", "待ち時間低減"]}];
+const $=s=>document.querySelector(s);
+let idx=0;
+const state=JSON.parse(localStorage.getItem('sekokanState')||'{}');
+state.items=state.items||{};
+function save(){localStorage.setItem('sekokanState',JSON.stringify(state));renderStats();renderList()}
+function today(){return new Date().toISOString().slice(0,10)}
+function touch(){let d=today(); state.days=state.days||[]; if(!state.days.includes(d))state.days.push(d);}
+function render(){
+ let x=DATA[idx]; $('#title').textContent=x.title; $('#question').textContent=x.question; $('#answer').value=''; $('#chars').textContent=0; $('#result').hidden=true; $('#topic').value=idx; window.scrollTo({top:0,behavior:'smooth'});
+}
+function normalize(s){return s.replace(/[（）()・\s]/g,'').toLowerCase()}
+function check(){
+ let x=DATA[idx], a=normalize($('#answer').value); touch();
+ let hits=x.keywords.filter(k=>a.includes(normalize(k)));
+ $('#keywords').innerHTML=x.keywords.map(k=>`<span class="chip ${hits.includes(k)?'hit':''}">${hits.includes(k)?'✓ ':''}${k}</span>`).join('');
+ $('#score').innerHTML=`解答例の重要語 <b>${hits.length} / ${x.keywords.length}</b> を含んでいます。<small>（機械判定は目安です。表現が異なっていても内容が同じなら問題ありません。）</small>`;
+ $('#model').textContent=x.model; $('#result').hidden=false;
+ let it=state.items[idx]||{tries:0,master:false}; it.tries++; state.items[idx]=it; save(); $('#result').scrollIntoView({behavior:'smooth',block:'start'});
+}
+function renderStats(){
+ let vals=Object.values(state.items||{}); $('#done').textContent=vals.filter(x=>x.tries).length; $('#mastered').textContent=vals.filter(x=>x.master).length;
+ let days=(state.days||[]).slice().sort().reverse(), n=0, d=new Date(); 
+ for(let i=0;i<400;i++){let s=d.toISOString().slice(0,10);if(days.includes(s)){n++;d.setDate(d.getDate()-1)}else if(i===0){d.setDate(d.getDate()-1)}else break;} $('#streak').textContent=n;
+}
+function renderList(){
+ $('#list').innerHTML=DATA.map((x,i)=>{let it=state.items[i]||{};return `<div class="item ${it.master?'master':''}" data-i="${i}"><span>${i+1}. ${x.title}</span><span class="state">${it.master?'✓ 理解':'未完了'}</span></div>`}).join('');
+ document.querySelectorAll('.item').forEach(el=>el.onclick=()=>{idx=+el.dataset.i;render()});
+}
+$('#topic').innerHTML=DATA.map((x,i)=>`<option value="${i}">${i+1}. ${x.title}</option>`).join('');
+$('#topic').onchange=e=>{idx=+e.target.value;render()};
+$('#random').onclick=()=>{let n;do n=Math.floor(Math.random()*DATA.length);while(n===idx&&DATA.length>1);idx=n;render()};
+$('#answer').oninput=e=>$('#chars').textContent=e.target.value.length;
+$('#check').onclick=check;
+$('#retry').onclick=()=>{state.items[idx]=state.items[idx]||{tries:1};state.items[idx].master=false;save();idx=(idx+1)%DATA.length;render()};
+$('#ok').onclick=()=>{state.items[idx]=state.items[idx]||{tries:1};state.items[idx].master=true;save();idx=(idx+1)%DATA.length;render()};
+$('#theme').onclick=()=>{document.body.classList.toggle('dark');localStorage.setItem('dark',document.body.classList.contains('dark')?'1':'0')};
+if(localStorage.getItem('dark')==='1')document.body.classList.add('dark');
+render();renderStats();renderList();
