@@ -9,6 +9,8 @@
 <body>
 <header><div><small>1級電気工事施工管理技士・二次試験</small><h1>技術記述トレーニング</h1></div><button id="theme" aria-label="表示切替">◐</button></header>
 <main>
+<nav class="mode-tabs"><button id="techTab" class="active">技術記述</button><button id="experienceTab">施工経験記述</button></nav>
+<div id="techMode">
 <section class="stats">
  <div><b id="done">0</b><span>練習済み</span></div>
  <div><b id="mastered">0</b><span>理解できた</span></div>
@@ -32,7 +34,7 @@
 </article>
 <section class="tips"><h3>記述の型</h3><p><b>①何か → ②何のためか → ③どう動くか → ④どんな効果か</b> の順に書くと、短い文章でも要点を整理しやすくなります。</p></section>
 <section><h3>学習一覧</h3><div id="list" class="list"></div></section>
-</main>
+</div><div id="experienceMode" hidden><section class="experience-head"><h2>施工経験記述 参照・練習</h2><p>与条件ごとの着眼点と、作成済みの記述例を確認できます。</p></section><section class="toolbar experience-toolbar"><select id="expCategory"></select><select id="expTopic"></select></section><article class="card"><div class="tag" id="expTag"></div><h2 id="expTitle"></h2><div id="expGuide"></div><div id="myExamples"></div></article><section class="tips"><h3>施工経験記述の基本構成</h3><p><b>①工事の状況 → ②予測・検討した問題 → ③具体的な対策 → ④管理上の効果</b>の順に整理します。</p></section></div></main>
 <footer>学習履歴はこの端末のブラウザ内に保存されます。</footer>
-<script src="app.js"></script>
+<script src="app.js"></script><script src="experience.js"></script>
 </body></html>
